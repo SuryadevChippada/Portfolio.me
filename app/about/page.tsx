@@ -33,11 +33,11 @@ This site is a log of that process.`,
         "Founding Member | Computer Vision & Edge AI Working on an interdisciplinary project for early forest-fire detection using UAVs and AI. I contribute to the computer vision pipeline, training and fine-tuning YOLO-based models for real-time smoke and fire detection. I also work on data collection from aerial imagery and deploy models on a Raspberry Pi 5 with an AI HAT+ for efficient edge inference.",
     },
     {
-      title: "Open Source Contributor",
-      company: "GitHub",
-      duration: "Ongoing",
+      title: "Snake Game In Terminal",
+      company: "Personal",
+      duration: "done",
       description:
-        "Contributing to open source projects, maintaining personal repositories, and sharing code with the developer community.",
+        "A terminal-based Snake game built with Python’s curses library. Control a growing snake using the keyboard, track your score in real-time, and adjust game speed. The project demonstrates skills in terminal interfaces, game logic, and live input handling.",
     },
   ],
 
