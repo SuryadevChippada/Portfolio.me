@@ -12,7 +12,7 @@ I didn’t wake up one day deciding to create dotfiles.
 
 It started with curiosity and a quiet wish to make things feel better.
 
-◦ What Are Dotfiles? (In Simple Words)
+## ◦ What Are Dotfiles? (In Simple Words)
 Dotfiles are configuration files.
 They decide how your tools behave, look, and respond to you.
 
@@ -20,7 +20,7 @@ They’re called dotfiles because they start with a dot:
 
 ∘ .zshrc
 ∘ .gitconfig
-∘ .wezterm.lua
+∘ .wezterm. Lua
 
 They are:
 
@@ -30,7 +30,7 @@ They are:
 
 Once set up, they just… work.
 
-◦ How I Discovered Them
+## ◦ How I Discovered Them
 At first, I only wanted my terminal to look nicer.
 
 Then came:
@@ -51,7 +51,7 @@ Portable.
 
 That realization changed everything.
 
-◦ One Small Change at a Time
+## ◦ One Small Change at a Time
 I didn’t learn everything at once.
 
 ◦ changed one thing
@@ -66,7 +66,7 @@ If something didn’t feel right, I removed it.
 
 That freedom felt really nice.
 
-◦ Why Dotfiles Feel So Good
+## ◦ Why Dotfiles Feel So Good
 The magic isn’t being “advanced”.
 
 The magic is convenience.
@@ -81,7 +81,7 @@ No noise.
 
 Just calm.
 
-◦ What My Dotfiles Cover
+## ◦ What My Dotfiles Cover
 Over time, my dotfiles grew naturally.
 
 ◦ Terminal & Prompt
@@ -115,7 +115,7 @@ Nothing fancy.
 Nothing forced.
 Just tools, I actually use almost all the time.
 
-◦ It Feels Personal (And That Matters)
+## ◦ It Feels Personal (And That Matters)
 My setup isn’t perfect.
 It isn’t copied from anyone.
 
@@ -126,7 +126,7 @@ Some days I add one tiny tweak.
 
 Dotfiles grow with you quietly.
 
-◦ Final Thoughts
+## ◦ Final Thoughts
 Dotfiles taught me something simple:
 
 ∘ You don’t need to overhaul everything
@@ -137,12 +137,4 @@ One change.
 One improvement.
 
 Over time, your system stops feeling generic
-and starts feeling like home.
-
-## Resources
-
-- [WAI-ARIA Authoring Practices](https://www.w3.org/WAI/ARIA/apg/)
-- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
-- [axe DevTools](https://www.deque.com/axe/devtools/)
-
-Building accessible components takes practice, but the impact on your users is worth the effort.
+And starts feeling like home.
