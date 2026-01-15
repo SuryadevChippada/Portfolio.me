@@ -18,7 +18,7 @@ export function HeroSection() {
 
       {/* Description */}
       <p className="text-muted-foreground leading-relaxed text-lg mb-8 max-w-lg">
-        A personal space where I document everything I learn from general knowledge to lessons that help me grow,
+        A personal space where I document everything I learn, from general knowledge to lessons that help me grow,
         improve, and think better every day.
       </p>
 
