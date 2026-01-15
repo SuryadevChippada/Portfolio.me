@@ -1,7 +1,7 @@
 ---
 title: "✧ .dotfiles"
 date: "2026-01-12"
-excerpt: "How My Setup Became Mine ∘"
+excerpt: "How My Setup Became Mine ∘."
 ---
 
 I didn’t wake up one day deciding to create dotfiles.
