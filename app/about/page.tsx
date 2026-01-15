@@ -17,12 +17,11 @@ export const metadata = {
 /* Updated with LinkedIn profile information */
 const aboutData = {
   name: "Suryadev Chippada",
-  headline: "Software Developer | Full Stack Engineer | Open Source Enthusiast",
-  location: "India",
-  summary: `I'm Surya, a passionate software developer focused on building meaningful applications 
-    and contributing to open source. I enjoy exploring new technologies, solving complex problems, 
-    and documenting my learning journey in public. This site serves as my digital garden—a place 
-    to share knowledge, projects, and thoughts on software development.`,
+  headline: "Computer Vision and AI Engineer @ FLARE Darmstadt | Informatik @ TU Darmstadt",
+  location: "Germany",
+  summary: `I study computer science at TU Darmstadt.
+I’m learning by experimenting, breaking things, and writing down what I understand.
+This site is a log of that process.`
 
   /* Experience based on LinkedIn */
   experience: [
