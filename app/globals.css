@@ -6,47 +6,49 @@
 /* 
  * GitBook-Inspired Dark Theme
  * ---------------------------
- * Background: #2A2A2A (dark charcoal gray)
+ * Background: #1a1a19 (darker charcoal)
  * Accent: #EE6E4D (warm coral/orange)
  * Font: JetBrains Mono (monospace throughout)
+ * All text uses the accent color #EE6E4D
  */
 
 :root {
-  /* Updated background to darker charcoal gray from reference image */
-  --background: #2a2a2a;
-  --foreground: #e8e6e3;
+  /* Darker background color */
+  --background: #1a1a19;
+  /* All text uses accent color */
+  --foreground: #ee6e4d;
 
-  /* Adjusted card colors to work with new background */
-  --card: #323232;
-  --card-foreground: #e8e6e3;
+  /* Card colors match background for seamless look */
+  --card: #1a1a19;
+  --card-foreground: #ee6e4d;
 
   /* Popover/dropdown colors */
-  --popover: #323232;
-  --popover-foreground: #e8e6e3;
+  --popover: #1e1e1d;
+  --popover-foreground: #ee6e4d;
 
   /* Primary accent color - coral/orange */
   --primary: #ee6e4d;
-  --primary-foreground: #1a1a1a;
+  --primary-foreground: #1a1a19;
 
-  /* Adjusted secondary/muted colors for new background */
-  --secondary: #3a3a3a;
-  --secondary-foreground: #e8e6e3;
+  /* Secondary/muted - slightly lighter bg */
+  --secondary: #252524;
+  --secondary-foreground: #ee6e4d;
 
-  /* Muted text and backgrounds */
-  --muted: #3a3a3a;
-  --muted-foreground: #8a8884;
+  /* Muted text is a dimmer version of accent */
+  --muted: #252524;
+  --muted-foreground: #b8574a;
 
   /* Accent - same as primary */
   --accent: #ee6e4d;
-  --accent-foreground: #1a1a1a;
+  --accent-foreground: #1a1a19;
 
   /* Destructive states */
   --destructive: #ef4444;
-  --destructive-foreground: #e8e6e3;
+  --destructive-foreground: #ee6e4d;
 
-  /* Updated border/input to work with new bg */
-  --border: #3a3a3a;
-  --input: #3a3a3a;
+  /* Borders more subtle */
+  --border: #2a2a29;
+  --input: #2a2a29;
   --ring: #ee6e4d;
 
   /* Chart colors */
@@ -58,14 +60,14 @@
 
   --radius: 0.5rem;
 
-  /* Updated sidebar colors to be slightly darker than main bg */
-  --sidebar: #242424;
-  --sidebar-foreground: #e8e6e3;
+  /* Sidebar matches main bg for seamless look */
+  --sidebar: #1a1a19;
+  --sidebar-foreground: #ee6e4d;
   --sidebar-primary: #ee6e4d;
-  --sidebar-primary-foreground: #1a1a1a;
-  --sidebar-accent: #323232;
-  --sidebar-accent-foreground: #e8e6e3;
-  --sidebar-border: #323232;
+  --sidebar-primary-foreground: #1a1a19;
+  --sidebar-accent: #252524;
+  --sidebar-accent-foreground: #ee6e4d;
+  --sidebar-border: #2a2a29;
   --sidebar-ring: #ee6e4d;
 }
 
@@ -117,6 +119,10 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Subtle radial gradient with accent color */
+    background: radial-gradient(ellipse at 0% 0%, rgba(238, 110, 77, 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 100% 100%, rgba(238, 110, 77, 0.05) 0%, transparent 50%), #1a1a19;
+    background-attachment: fixed;
   }
 }
 

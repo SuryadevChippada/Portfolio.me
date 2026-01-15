@@ -3,33 +3,27 @@
 import { useState, useEffect, useCallback, useRef } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, X, Home, FileText, User } from "lucide-react"
+import { Menu, X, Home, FileText, User, FolderGit2 } from "lucide-react"
 
 /**
  * Resizable Sidebar Component
  * ---------------------------
  * GitBook-style sidebar with drag-to-resize functionality.
- *
- * Features:
- * - Drag the right edge to resize
- * - Min width: 140px, Max width: 300px
- * - Width persists in localStorage
- * - Collapses to hamburger menu on mobile
  */
 
-/* Navigation items - customize these */
+/* Added Projects to navigation items */
 const navItems = [
   { name: "Home", href: "/", icon: Home },
+  { name: "Projects", href: "/projects", icon: FolderGit2 },
   { name: "Blog", href: "/blog", icon: FileText },
   { name: "About", href: "/about", icon: User },
 ]
 
-/* Updated social links with actual profiles, removed Twitter */
+/* Social links with actual profiles */
 const socialLinks = [
   {
     name: "GitHub",
     href: "https://github.com/SuryadevChippada",
-    /* GitHub Invertocat icon */
     icon: () => (
       <svg viewBox="0 0 16 16" fill="currentColor" className="w-5 h-5">
         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
@@ -39,7 +33,6 @@ const socialLinks = [
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/suryadev-chippada/",
-    /* LinkedIn icon */
     icon: () => (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
@@ -48,7 +41,6 @@ const socialLinks = [
   },
 ]
 
-/* Reduced sidebar size - smaller min, max, and default */
 const MIN_WIDTH = 140
 const MAX_WIDTH = 300
 const DEFAULT_WIDTH = 160
@@ -60,7 +52,6 @@ export function ResizableSidebar() {
   const [isResizing, setIsResizing] = useState(false)
   const sidebarRef = useRef<HTMLDivElement>(null)
 
-  /* Load saved width from localStorage on mount */
   useEffect(() => {
     const savedWidth = localStorage.getItem("sidebar-width")
     if (savedWidth) {
@@ -71,11 +62,9 @@ export function ResizableSidebar() {
     }
   }, [])
 
-  /* Handle mouse move during resize */
   const handleMouseMove = useCallback(
     (e: MouseEvent) => {
       if (!isResizing) return
-
       const newWidth = e.clientX
       if (newWidth >= MIN_WIDTH && newWidth <= MAX_WIDTH) {
         setSidebarWidth(newWidth)
@@ -85,14 +74,12 @@ export function ResizableSidebar() {
     [isResizing],
   )
 
-  /* Handle mouse up to stop resizing */
   const handleMouseUp = useCallback(() => {
     setIsResizing(false)
     document.body.style.cursor = ""
     document.body.style.userSelect = ""
   }, [])
 
-  /* Add/remove event listeners for resize */
   useEffect(() => {
     if (isResizing) {
       document.addEventListener("mousemove", handleMouseMove)
@@ -100,19 +87,16 @@ export function ResizableSidebar() {
       document.body.style.cursor = "col-resize"
       document.body.style.userSelect = "none"
     }
-
     return () => {
       document.removeEventListener("mousemove", handleMouseMove)
       document.removeEventListener("mouseup", handleMouseUp)
     }
   }, [isResizing, handleMouseMove, handleMouseUp])
 
-  /* Start resize on mouse down */
   const startResizing = () => {
     setIsResizing(true)
   }
 
-  /* Check if a nav item is active */
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/"
     return pathname.startsWith(href)
@@ -123,19 +107,19 @@ export function ResizableSidebar() {
       {/* Mobile menu button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-4 left-4 z-50 p-2 rounded-md bg-card md:hidden"
+        className="fixed top-4 left-4 z-50 p-2 rounded-md bg-secondary md:hidden"
         aria-label="Toggle menu"
       >
         {isOpen ? <X className="w-5 h-5 text-foreground" /> : <Menu className="w-5 h-5 text-foreground" />}
       </button>
 
-      {/* Sidebar */}
+      {/* Sidebar - removed border, matches bg for seamless look */}
       <aside
         ref={sidebarRef}
         style={{ width: sidebarWidth }}
         className={`
           fixed top-0 left-0 z-40 h-full
-          bg-sidebar border-r border-sidebar-border
+          bg-transparent
           transform transition-transform duration-200 ease-in-out
           ${isOpen ? "translate-x-0" : "-translate-x-full"}
           md:translate-x-0
@@ -146,16 +130,14 @@ export function ResizableSidebar() {
           {/* Logo / Name */}
           <div className="mb-6 pt-1 px-1">
             <Link href="/" className="block">
-              <span className="text-sm font-semibold tracking-tight">
-                <span className="text-foreground">surya</span>
-                <span className="text-primary">.dev</span>
+              <span className="text-sm font-semibold tracking-tight text-foreground">
+                surya<span className="opacity-60">.dev</span>
               </span>
             </Link>
           </div>
 
-          {/* Navigation */}
-          <nav className="flex-1">
-            <ul className="space-y-0.5">
+          <nav className="flex-1 flex flex-col items-center justify-center">
+            <ul className="space-y-1 w-full">
               {navItems.map((item) => {
                 const active = isActive(item.href)
                 return (
@@ -164,12 +146,12 @@ export function ResizableSidebar() {
                       href={item.href}
                       onClick={() => setIsOpen(false)}
                       className={`
-                        flex items-center gap-2 px-2 py-1.5 rounded-md
+                        flex items-center justify-center gap-2 px-2 py-2 rounded-md
                         text-xs transition-colors duration-150
                         ${
                           active
-                            ? "bg-sidebar-accent text-primary"
-                            : "text-muted-foreground hover:text-primary hover:bg-sidebar-accent"
+                            ? "bg-secondary text-foreground"
+                            : "text-muted-foreground hover:text-foreground hover:bg-secondary"
                         }
                       `}
                     >
@@ -183,15 +165,15 @@ export function ResizableSidebar() {
           </nav>
 
           {/* Social Links */}
-          <div className="pt-4 border-t border-sidebar-border">
-            <div className="flex items-center gap-3 px-1">
+          <div className="pt-4 border-t border-border">
+            <div className="flex items-center justify-center gap-3 px-1">
               {socialLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
                   aria-label={link.name}
                 >
                   <link.icon />
@@ -201,14 +183,14 @@ export function ResizableSidebar() {
           </div>
         </div>
 
-        {/* Resize handle - only on desktop */}
+        {/* Resize handle */}
         <div
           onMouseDown={startResizing}
           className={`
             hidden md:block absolute top-0 right-0 w-1 h-full
-            cursor-col-resize hover:bg-primary/50
+            cursor-col-resize hover:bg-primary/30
             transition-colors duration-150
-            ${isResizing ? "bg-primary/50" : "bg-transparent"}
+            ${isResizing ? "bg-primary/30" : "bg-transparent"}
           `}
           title="Drag to resize"
         />
@@ -225,7 +207,6 @@ export function ResizableSidebar() {
   )
 }
 
-/* Hook to get sidebar width for layout offset */
 export function useSidebarWidth() {
   const [width, setWidth] = useState(DEFAULT_WIDTH)
 
@@ -238,7 +219,6 @@ export function useSidebarWidth() {
       }
     }
 
-    /* Listen for storage changes to sync width */
     const handleStorage = () => {
       const newWidth = localStorage.getItem("sidebar-width")
       if (newWidth) {
