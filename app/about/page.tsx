@@ -53,21 +53,20 @@ This site is a log of that process.`,
 
   /* Skills based on GitHub activity */
   skills: [
-    "JavaScript / TypeScript",
-    "React & Next.js",
-    "Node.js",
-    "Python",
+    "JavaScript / TypeScript / CSS / HTML",
+    "React & Angular",
+    "Python / Java",
     "Git & GitHub",
-    "SQL & Databases",
-    "REST APIs",
+    "YOLO",
+    "Neo4j"
     "Problem Solving",
   ],
 
   /* Interests */
-  interests: ["Web Development", "Open Source", "System Design", "Learning in Public"],
+  interests: ["Web Development", "Optimization", "Learning in Public"],
 
   /* Contact */
-  email: "contact@surya.dev",
+  email: "chippadasurya8@gmail.com",
   linkedin: "https://www.linkedin.com/in/suryadev-chippada/",
   github: "https://github.com/SuryadevChippada",
 }
