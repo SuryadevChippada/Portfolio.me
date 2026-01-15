@@ -11,7 +11,7 @@ import { MainLayout } from "@/components/main-layout"
 
 export const metadata = {
   title: "About | Surya",
-  description: "Learn more about Suryadev Chippada - Software Developer and Tech Enthusiast.",
+  description: "Learn more about Suryadev Chippada.",
 }
 
 /* Updated with LinkedIn profile information */
@@ -26,11 +26,11 @@ This site is a log of that process.`
   /* Experience based on LinkedIn */
   experience: [
     {
-      title: "Software Developer",
-      company: "Full Stack Development",
-      duration: "2023 - Present",
+      title: "Computer Vision and AI Engineer @ FLARE Darmstadt",
+      company: "FLARE @ TU Darmstadt",
+      duration: "Nov 2024 - Present",
       description:
-        "Building web applications using modern technologies like React, Next.js, Node.js, and various databases. Focused on creating clean, maintainable code and great user experiences.",
+        "Founding Member | Computer Vision & Edge AI Working on an interdisciplinary project for early forest-fire detection using UAVs and AI. I contribute to the computer vision pipeline, training and fine-tuning YOLO-based models for real-time smoke and fire detection. I also work on data collection from aerial imagery and deploy models on a Raspberry Pi 5 with an AI HAT+ for efficient edge inference.",
     },
     {
       title: "Open Source Contributor",
