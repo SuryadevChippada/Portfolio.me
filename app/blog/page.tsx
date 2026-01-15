@@ -44,7 +44,7 @@ export default function BlogPage() {
         <header className="mb-12">
           <h1 className="text-3xl font-bold text-primary mb-4">Blog</h1>
           <p className="text-muted-foreground">
-            Thoughts, learnings, and documentation. New posts are added by creating markdown files in{" "}
+            Thoughts, learnings, and documentation.
             <code className="text-primary text-sm font-mono">/content/blog</code>
           </p>
         </header>
