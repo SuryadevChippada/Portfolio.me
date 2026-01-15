@@ -44,8 +44,8 @@ This site is a log of that process.`,
   /* Education */
   education: [
     {
-      degree: "Computer Science & Engineering",
-      institution: "University",
+      degree: "Computer Science Engineering",
+      institution: "Technische Universität Darmstadt",
       description:
         "Studying software development, algorithms, data structures, and building practical applications. Passionate about web technologies and system design.",
     },
