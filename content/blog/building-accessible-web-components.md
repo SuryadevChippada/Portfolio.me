@@ -1,69 +1,143 @@
 ---
-title: "Building Accessible Web Components"
-date: "2026-01-10"
-excerpt: "A practical guide to creating web components that work for everyone, including keyboard navigation and screen reader support."
+title: "✧ .dotfiles"
+date: "2026-01-12"
+excerpt: "How My Setup Became Mine ∘"
 ---
 
-Accessibility isn't just a nice-to-have feature—it's essential for creating inclusive web experiences. In this post, we'll explore practical techniques for building accessible components.
+I didn’t wake up one day deciding to create dotfiles.
 
-## Why Accessibility Matters
+☐ No master plan
+☐ No productivity obsession
+☐ No aesthetic flex
 
-Making your web components accessible benefits everyone:
+It started with curiosity and a quiet wish to make things feel better.
 
-- People using screen readers
-- Users who navigate with keyboards
-- Those with motor impairments
-- People in various contexts (bright sunlight, noisy environments)
+◦ What Are Dotfiles? (In Simple Words)
+Dotfiles are configuration files.
+They decide how your tools behave, look, and respond to you.
 
-## Key Principles
+They’re called dotfiles because they start with a dot:
 
-### 1. Semantic HTML
+∘ .zshrc
+∘ .gitconfig
+∘ .wezterm.lua
 
-Always start with semantic HTML elements:
+They are:
 
-```html
-<!-- Good: Semantic button -->
-<button onClick={handleClick}>Submit</button>
+◦ Quiet
+◦ Hidden
+◦ Always working in the background
 
-<!-- Avoid: Div styled as button -->
-<div onClick={handleClick}>Submit</div>
-```
+Once set up, they just… work.
 
-### 2. Keyboard Navigation
+◦ How I Discovered Them
+At first, I only wanted my terminal to look nicer.
 
-Ensure all interactive elements are keyboard accessible:
+Then came:
 
-```javascript
-function AccessibleButton({ onClick, children }) {
-  const handleKeyDown = (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      onClick();
-    }
-  };
+◦ a small color tweak
+◦ a simple shortcut
+◦ a faster way to move around
+◦ a clean system info view
 
-  return (
-    <button onClick={onClick} onKeyDown={handleKeyDown}>
-      {children}
-    </button>
-  );
-}
-```
+And slowly, something clicked:
 
-### 3. ARIA Labels
+∘ All these tools were configurable
+∘ And all those configs were just files
 
-Use ARIA attributes when semantic HTML isn't enough:
+Plain text.
+Editable.
+Portable.
 
-```jsx
-<button aria-label="Close modal" aria-describedby="modal-description">
-  <XIcon />
-</button>
-```
+That realization changed everything.
 
-## Testing Your Components
+◦ One Small Change at a Time
+I didn’t learn everything at once.
 
-1. **Keyboard test**: Can you use Tab, Enter, and Escape?
-2. **Screen reader test**: Does it make sense when read aloud?
-3. **Contrast check**: Is text readable against backgrounds?
+◦ changed one thing
+◦ broke it
+◦ fixed it
+◦ learned something
+
+Nothing was locked behind a UI.
+Nothing felt permanent in a scary way.
+
+If something didn’t feel right, I removed it.
+
+That freedom felt really nice.
+
+◦ Why Dotfiles Feel So Good
+The magic isn’t being “advanced”.
+
+The magic is convenience.
+
+◦ Things are where I expect them to be
+◦ Shortcuts work the way my brain works
+◦ Tools feel familiar, even on a new machine
+
+No friction.
+No relearning.
+No noise.
+
+Just calm.
+
+◦ What My Dotfiles Cover
+Over time, my dotfiles grew naturally.
+
+◦ Terminal & Prompt
+∘ WezTerm · Alacritty · Ghostty
+∘ Starship
+
+◦ System & Visuals
+∘ btop
+∘ fastfetch / neofetch
+∘ cava
+
+◦ Development
+∘ Neovim
+∘ Build tools
+∘ LaTeX configs
+
+◦ Navigation
+∘ Yazi
+∘ broot
+
+◦ Productivity
+∘ Raycast
+∘ wtf
+∘ jrnl
+
+◦ Media & Fun
+∘ mpv
+∘ Games & experiments
+
+Nothing fancy.
+Nothing forced.
+Just tools, I actually use almost all the time.
+
+◦ It Feels Personal (And That Matters)
+My setup isn’t perfect.
+It isn’t copied from anyone.
+
+It changes when I change.
+
+Some days I remove things.
+Some days I add one tiny tweak.
+
+Dotfiles grow with you quietly.
+
+◦ Final Thoughts
+Dotfiles taught me something simple:
+
+∘ You don’t need to overhaul everything
+∘ You just need to care a little
+
+One file.
+One change.
+One improvement.
+
+Over time, your system stops feeling generic
+and starts feeling like home.
 
 ## Resources
 
