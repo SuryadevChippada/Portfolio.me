@@ -6,9 +6,9 @@ excerpt: "How My Setup Became Mine ∘."
 
 I didn’t wake up one day deciding to create dotfiles.
 
-☐ No master plan
-☐ No productivity obsession
-☐ No aesthetic flex
+☐ No master plan<br>
+☐ No productivity obsession<br>
+☐ No aesthetic flex<br>
 
 It started with curiosity and a quiet wish to make things feel better.
 
@@ -18,15 +18,15 @@ They decide how your tools behave, look, and respond to you.
 
 They’re called dotfiles because they start with a dot:
 
-∘ .zshrc
-∘ .gitconfig
-∘ .wezterm. Lua
+∘ .zshrc<br>
+∘ .gitconfig<br>
+∘ .wezterm. Lua<br>
 
 They are:
 
-◦ Quiet
-◦ Hidden
-◦ Always working in the background
+◦ Quiet<br>
+◦ Hidden<br>
+◦ Always working in the background<br>
 
 Once set up, they just… work.
 
@@ -35,29 +35,29 @@ At first, I only wanted my terminal to look nicer.
 
 Then came:
 
-◦ a small color tweak
-◦ a simple shortcut
-◦ a faster way to move around
-◦ a clean system info view
+◦ a small color tweak<br>
+◦ a simple shortcut<br>
+◦ a faster way to move around<br>
+◦ a clean system info view<br>
 
 And slowly, something clicked:
 
-∘ All these tools were configurable
-∘ And all those configs were just files
+∘ All these tools were configurable<br>
+∘ And all those configs were just files<br>
 
-Plain text.
-Editable.
-Portable.
+Plain text.<br>
+Editable.<br>
+Portable.<br>
 
 That realization changed everything.
 
 ## ◦ One Small Change at a Time
-I didn’t learn everything at once.
+I didn’t learn everything at once.<br>
 
-◦ changed one thing
-◦ broke it
-◦ fixed it
-◦ learned something
+◦ changed one thing<br>
+◦ broke it<br>
+◦ fixed it<br>
+◦ learned something<br>
 
 Nothing was locked behind a UI.
 Nothing felt permanent in a scary way.
