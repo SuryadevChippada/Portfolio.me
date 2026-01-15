@@ -18,8 +18,9 @@ export function HeroSection() {
 
       {/* Description */}
       <p className="text-muted-foreground leading-relaxed text-lg mb-8 max-w-lg">
-        A personal space where I document everything I learn, from general knowledge to lessons that help me grow,
-        improve, and think better every day.
+        I study computer science at TU Darmstadt.
+        I’m learning by experimenting, breaking things, and writing down what I understand.
+        This site is a log of that process.
       </p>
 
       {/* CTA Buttons */}
