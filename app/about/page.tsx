@@ -21,7 +21,7 @@ const aboutData = {
   location: "Germany",
   summary: `I study computer science at TU Darmstadt.
 I’m learning by experimenting, breaking things, and writing down what I understand.
-This site is a log of that process.`
+This site is a log of that process.`,
 
   /* Experience based on LinkedIn */
   experience: [
