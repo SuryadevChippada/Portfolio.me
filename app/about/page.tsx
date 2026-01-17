@@ -76,7 +76,6 @@ This site is a log of that process.`,
     "Optimization",
     "Edge Deployment",
     "Learning in Public",
-    "Building Developer Tools",
   ],
 
   
