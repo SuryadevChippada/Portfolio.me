@@ -19,7 +19,6 @@ import { Menu, X, Home, FolderOpen, BookOpen, Mail, Github, Linkedin, Twitter } 
 /* Navigation items - easy to customize */
 const navItems = [
   { name: "Home", href: "#home", icon: Home },
-  { name: "Projects", href: "#projects", icon: FolderOpen },
   { name: "Blog", href: "#blog", icon: BookOpen },
   { name: "Contact", href: "#contact", icon: Mail },
 ]
