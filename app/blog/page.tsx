@@ -12,7 +12,7 @@ import { MainLayout } from "@/components/main-layout"
 
 export const metadata = {
   title: "Blog | Surya",
-  description: "Articles, thoughts, and tutorials on learning and development.",
+  description: "Articles, thoughts, and tutorials on learning and development. View my projects on GitHub.",
 }
 
 /* Helper function to format dates */
