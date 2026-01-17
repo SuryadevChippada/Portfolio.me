@@ -58,7 +58,7 @@ This site is a log of that process.`,
     "Python / Java",
     "Git & GitHub",
     "YOLO",
-    "Neo4j"
+    "Neo4j",
     "Problem Solving",
   ],
 
