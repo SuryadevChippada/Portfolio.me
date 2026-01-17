@@ -4,9 +4,6 @@ import { MainLayout } from "@/components/main-layout"
 
 /**
  * About Page
- * ----------
- * Personal information from LinkedIn profile:
- * https://www.linkedin.com/in/suryadev-chippada/
  */
 
 export const metadata = {
@@ -14,7 +11,6 @@ export const metadata = {
   description: "Learn more about Suryadev Chippada.",
 }
 
-/* Updated with LinkedIn profile information */
 const aboutData = {
   name: "Suryadev Chippada",
   headline: "Computer Vision and AI Engineer @ FLARE Darmstadt | Informatik @ TU Darmstadt",
@@ -23,7 +19,7 @@ const aboutData = {
 I’m learning by experimenting, breaking things, and writing down what I understand.
 This site is a log of that process.`,
 
-  /* Experience based on LinkedIn */
+  // Experience 
   experience: [
     {
       title: "Computer Vision and AI Engineer @ FLARE Darmstadt",
@@ -51,19 +47,37 @@ This site is a log of that process.`,
     },
   ],
 
-  /* Skills based on GitHub activity */
   skills: [
-    "JavaScript / TypeScript / CSS / HTML",
-    "React & Angular",
-    "Python / Java",
-    "Git & GitHub",
+    "JavaScript / TypeScript",
+    "Python",
+    "Java",
+    "HTML",
+    "CSS",
+    "React / Angular",
+    "Bootstrap",
+    "Firebase / Vercel",
     "YOLO",
+    "OpenCV",
+    "PyTorch",
+    "TensorFlow",
+    "NumPy",
+    "Pandas",
     "Neo4j",
-    "Problem Solving",
+    "Git / GitHub",
+    "Markdown",
+    "LaTeX",
+    "Raspberry Pi",
   ],
 
   /* Interests */
-  interests: ["Web Development", "Optimization", "Learning in Public"],
+  interests: [
+    "Web Development",
+    "Computer Vision & AI",
+    "Optimization",
+    "Edge Deployment",
+    "Learning in Public",
+    "Building Developer Tools",
+  ],
 
   
   /* Contact */
