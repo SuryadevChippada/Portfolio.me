@@ -45,7 +45,6 @@ export default function BlogPage() {
           <h1 className="text-3xl font-bold text-primary mb-4">Blog</h1>
           <p className="text-muted-foreground">
             Thoughts, learnings, and documentation.
-            <br>View my projects on GitHub.<br/>
             <code className="text-primary text-sm font-mono">/content/blog</code>
           </p>
         </header>
