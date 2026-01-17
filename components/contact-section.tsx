@@ -13,8 +13,8 @@ import { Mail, MapPin, Send } from "lucide-react"
 
 /* Contact information - customize with your details */
 const contactInfo = {
-  email: "hello@yourname.com",
-  location: "San Francisco, CA",
+  email: "chippadasurya8@gmail.com",
+  location: "Darmstadt , Germany",
   availability: "Open to freelance projects and full-time opportunities.",
 }
 
