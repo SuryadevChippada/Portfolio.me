@@ -18,7 +18,7 @@ export function HeroSection() {
 
       {/* Description */}
       <p className="text-muted-foreground leading-relaxed text-lg mb-8 max-w-lg">
-        I study computer science at TU Darmstadt.
+        I study Computer Science at TU Darmstadt.
         I’m learning by experimenting, breaking things, and writing down what I understand.
         This site is a log of that process.
       </p>
