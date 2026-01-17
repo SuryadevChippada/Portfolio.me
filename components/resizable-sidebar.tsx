@@ -14,7 +14,6 @@ import { Menu, X, Home, FileText, User, FolderGit2 } from "lucide-react"
 /* Added Projects to navigation items */
 const navItems = [
   { name: "Home", href: "/", icon: Home },
-  { name: "Projects", href: "/projects", icon: FolderGit2 },
   { name: "Blog", href: "/blog", icon: FileText },
   { name: "About", href: "/about", icon: User },
 ]
