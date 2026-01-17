@@ -65,6 +65,7 @@ This site is a log of that process.`,
   /* Interests */
   interests: ["Web Development", "Optimization", "Learning in Public"],
 
+  
   /* Contact */
   email: "chippadasurya8@gmail.com",
   linkedin: "https://www.linkedin.com/in/suryadev-chippada/",
