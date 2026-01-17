@@ -2,20 +2,6 @@ import { ArrowRight, Calendar } from "lucide-react"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog"
 
-/**
- * Blog Section Component
- * ----------------------
- * Automatically displays blog posts from your markdown files.
- *
- * HOW IT WORKS:
- * - Reads all .md files from /content/blog folder
- * - Parses frontmatter (title, date, excerpt)
- * - Displays them sorted by date (newest first)
- *
- * TO ADD A POST: Just create a new .md file in /content/blog
- */
-
-/* Helper function to format dates nicely */
 function formatDate(dateString: string): string {
   const date = new Date(dateString)
   return date.toLocaleDateString("en-US", {
